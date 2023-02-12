@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!--   
+  <script src="https://astutis.github.io/moodle/JS/theme-astutis.js"></script>
+    <script src="https://astutis.github.io/moodle/JS/transitionv2.js"></script>
+
+    <script>
+      //Envoke functions here
+
+      loaderColor();
+    </script>
+-->
+    <script src="https://astutis.github.io/moodle/JS/lottie-interactivity.js"></script>
+
+    <script src="https://astutis.github.io/moodle/JS/theme-astutis.js"></script>
+
+    <!--<script src="https://astutis.github.io/moodle/JS/transitionv2.js"></script>-->
+
+    <!--Page load fix start-->
+    <script>
+      function loadImage(imageUrl) {
+        return new Promise((resolve, reject) => {
+          var image = new Image();
+          image.src = imageUrl;
+          image.onload = function () {
+            resolve(image);
+          };
+          image.onerror = function () {
+            console.warn(`Image ${imageUrl} could not be loaded, ignoring...`);
+            resolve();
+          };
+        });
+      }
+
+      var imageUrls = [
+        "path/to/image1.jpg",
+        "path/to/image2.jpg",
+        // ...
+      ];
+
+      Promise.all(imageUrls.map(loadImage))
+        .then((images) => {
+          console.log("All images loaded successfully");
+          // Put your code that uses the images here
+          // ...
+          //Loading animation V3
+          function asdPageLoadFix() {
+            //Working solution
+            const anchors = document.querySelectorAll("a");
+            const transition_el = document.querySelector(".transition");
+            console.log("loaded");
+            document.body.classList.add("ast-no-scroll");
+
+            setTimeout(() => {
+              transition_el.classList.remove("is-active");
+            }, 500);
+            setTimeout(() => {
+              transition_el.classList.add("hidden");
+              document.body.classList.remove("ast-no-scroll");
+            }, 900);
+          }
+          asdPageLoadFix();
+        })
+        .catch((error) => {
+          console.error(error);
+          // Put your code to be executed when the images are ignored here
+          // ...
+          //Loading animation V3
+          function asdPageLoadFix() {
+            //Working solution
+            const anchors = document.querySelectorAll("a");
+            const transition_el = document.querySelector(".transition");
+            console.log("loaded");
+            document.body.classList.add("ast-no-scroll");
+
+            setTimeout(() => {
+              transition_el.classList.remove("is-active");
+            }, 500);
+            setTimeout(() => {
+              transition_el.classList.add("hidden");
+              document.body.classList.remove("ast-no-scroll");
+            }, 900);
+          }
+          asdPageLoadFix();
+        });
+    </script>
+    <!--Page load fix end-->
+
+    <script>
+      removeLogoPages();
+      brandColors();
+      removedrawer();
+      customLogin();
+      astActivityHover();
+    </script>
+  </body>
+</html>

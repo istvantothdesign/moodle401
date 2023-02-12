@@ -1,0 +1,237 @@
+// Font
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+//Background image
+.pagelayout-login #page,
+body {
+  // background: url([[pix:theme|site/theme-astutis-bg]]);
+  background: white;
+  // background-size: contain !important;
+}
+
+// Text Styles
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-weight: 600;
+}
+
+// Navigation
+.navbar.fixed-top {
+  [data-key="home"] {
+    display: none;
+  }
+  height: auto;
+  align-items: center;
+  .navbar-brand {
+    .logo {
+      // max-height: none;
+      max-width: 156px;
+    }
+  }
+}
+
+.navbar.fixed-top {
+  [data-key="courses"] {
+    display: none;
+  }
+}
+
+.breadcrumb {
+  .breadcrumb-item {
+    max-width: 250px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+// Drawer
+#theme_boost-drawers-primary {
+  .drawercontent.drag-container {
+    .list-group {
+      a[href$="courses.php"] {
+        display: none;
+      }
+      a[href$="?redirect=0"] {
+        display: none;
+      }
+    }
+  }
+}
+
+// General
+.ast-round {
+  border-radius: 10px;
+}
+
+// Footer
+.ast-footer.astutis {
+  padding: 20px 15px;
+  max-width: 250px;
+  p,
+  a {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+  }
+}
+
+.ast-footer__ctn {
+  margin: 20px 0 40px 0;
+}
+
+.ast-footer__wrp {
+  margin-bottom: 10px;
+}
+
+.ast-footer__heading {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.ast-footer__wrp.social {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.ast-footer__social {
+  width: 24px;
+  text-align: center;
+  transition: filter 200ms ease-in-out;
+  &:hover {
+    filter: brightness(2);
+    cursor: pointer;
+  }
+}
+
+.ast-footer__social__icon.facebook {
+  content: url([[pix:theme|site/social-icons/facebook]]);
+}
+.ast-footer__social__icon.twitter {
+  content: url([[pix:theme|site/social-icons/twitter]]);
+}
+.ast-footer__social__icon.youtube {
+  content: url([[pix:theme|site/social-icons/youtube]]);
+}
+.ast-footer__social__icon.linkedin {
+  content: url([[pix:theme|site/social-icons/linkedin]]);
+}
+
+//H5P
+#h5p-iframe-5 {
+  body {
+    background: green;
+  }
+}
+
+// Skins
+.rospa-logo {
+  content: url(https://istvantothdesign.github.io/astutis/rospa-logo.png);
+}
+.amazon-logo {
+  content: url(https://astutis.github.io/moodle/Astutis%20Theme/Images/Client%20logos/amazon%20logo.png);
+}
+
+// Media Queries
+@media only screen and (min-width: 1700px) {
+  .pagelayout-login #page,
+  body {
+    background-size: cover !important;
+    background-position: center;
+  }
+}
+@media only screen and (max-width: 1700px) {
+  .pagelayout-login #page,
+  body {
+    background-size: contain !important;
+    background-position: center;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .pagelayout-login #page,
+  body {
+    background: white !important;
+  }
+}
+
+// Addition - Diploma forum, blog, marketing section
+#page-mod-oublog-view {
+  #page-content {
+    display: flex;
+    justify-content: center;
+    #region-main-box {
+      max-width: 830px;
+      #oublog-posts {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        .oublog-post {
+          padding: 30px;
+          background: transparent;
+          box-shadow: 0px 0px 12px 0px #00000017;
+          border-radius: 20px;
+        }
+        .oublog-odd {
+          border-left: 25px solid #ffbd00;
+        }
+        .oublog-even {
+          border-left: 25px solid #0000ff;
+        }
+      }
+      .oublog-views {
+        display: none;
+      }
+    }
+  }
+}
+
+#page-mod-oublog-editpost,
+#page-mod-oublog-participation,
+#page-mod-forum-view,
+#page-mod-forum-discuss {
+  #page-content {
+    display: flex;
+    justify-content: center;
+    #region-main-box {
+      max-width: 830px;
+      width: 100%;
+    }
+  }
+}
+
+.oublog {
+  div {
+    div {
+      div {
+        // background: blue;
+        align-items: center;
+        justify-content: space-between;
+        .activity-info {
+          display: none !important;
+        }
+      }
+    }
+  }
+}
+
+.forumpost {
+  padding: 30px !important;
+  background: transparent;
+  box-shadow: 0px 0px 12px 0px #00000017;
+  border-radius: 20px;
+}

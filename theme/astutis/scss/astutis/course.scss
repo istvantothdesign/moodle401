@@ -1,0 +1,153 @@
+// Drawer
+#page-course-view-topics {
+  // .ast-drawer {
+  //   display: none;
+  // }
+  #page-navbar {
+    .breadcrumb {
+      display: none;
+    }
+  }
+}
+
+.section.course-section.main.section-summary {
+  border-left: 13px solid #342ba6;
+  padding-right: 30px;
+  margin-bottom: 2rem;
+  transition: all 200ms;
+  box-shadow: -5px 5px 8px 0px #00000010;
+
+  &:hover {
+    border-left-width: 30px;
+    padding-right: 13px;
+    box-shadow: -5px 5px 12px 0px #00000020;
+  }
+
+  &:nth-of-type(2n) {
+    border-left: 13px solid #bb74ff;
+
+    &:hover {
+      border-left-width: 30px;
+      box-shadow: -5px 5px 12px 0px #00000020;
+    }
+  }
+
+  .content {
+    .section-summary-activities {
+      text-align: left;
+      &:nth-of-type(2n) {
+        display: none;
+      }
+    }
+  }
+}
+
+// Activities
+.topics {
+  #section-0 {
+    display: none;
+  }
+  .course-section-header {
+    .sectionname {
+      text-align: left;
+    }
+  }
+}
+
+#courseindexsection0 {
+  display: none !important;
+}
+
+.activity.activity-wrapper {
+  margin-bottom: 2rem;
+  transition: all 200ms;
+  box-shadow: -5px 5px 8px 0px #00000010;
+  padding: 0;
+  border-radius: 10px;
+  &:hover {
+    box-shadow: -5px 5px 12px 0px #00000020;
+  }
+  .activity-info {
+    align-self: center;
+  }
+
+  [data-region="completion-info"] {
+    button {
+      color: #352ba6;
+      border-color: #352ba6;
+      &:hover {
+        background: #352ba6;
+        color: white;
+      }
+    }
+    .btn-success {
+      background-color: white;
+    }
+  }
+}
+
+.activity.activity-wrapper.label {
+  box-shadow: none;
+  .activity-item {
+    padding: 0;
+  }
+  .activity-altcontent {
+    padding: 0;
+  }
+  &:hover {
+    box-shadow: none;
+  }
+}
+
+.activitytitle {
+  .text-uppercase.small {
+    display: none;
+  }
+}
+
+.activityiconcontainer {
+  background: #f6f6f7 !important;
+  .activityicon {
+    filter: invert(36%) sepia(66%) saturate(5497%) hue-rotate(251deg)
+      brightness(100%) contrast(102%) !important;
+  }
+}
+
+.ast-completion-badge--true {
+  color: #352ba6;
+  background-color: white;
+  border: 1px solid #352ba6;
+}
+
+.ast-completion-badge--false {
+  color: #352ba6;
+  background-color: white;
+  border: 1px solid #352ba6;
+  padding: 0.8rem !important;
+}
+
+.activity-header {
+  display: none;
+}
+
+#page-header {
+  padding-bottom: 0.5rem;
+  #page-navbar {
+    margin-bottom: 1rem;
+  }
+  .page-header-headings {
+    .text-muted.text-uppercase.small.line-height-3 {
+      display: none;
+    }
+  }
+}
+
+// Books
+.book_toc {
+  li {
+    margin-bottom: 0.3rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}

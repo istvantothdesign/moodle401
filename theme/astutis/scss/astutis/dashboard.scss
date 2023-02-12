@@ -1,0 +1,122 @@
+#page-my-index {
+  .card-title.d-inline {
+    display: none !important;
+  }
+  // .ast-drawer {
+  //   display: none;
+  // }
+}
+
+.ast-welcome-gradient {
+  // background: linear-gradient(
+  //   286deg,
+  //   #ff6f30 0%,
+  //   #3e3eff 54%,
+  //   #a243ff 78%,
+  //   #3127a4 100%
+  // );
+  background: linear-gradient(
+    286deg,
+    var(--ast-brand-gradient-1) 0%,
+    var(--ast-brand-gradient-2) 54%,
+    var(--ast-brand-gradient-3) 78%,
+    var(--ast-brand-gradient-4) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.ast-welcome-message {
+  font-size: 1.2rem;
+}
+
+.dashboard-card-deck {
+  .dashboard-card {
+    // background: linear-gradient(181.64deg, #a9a4d9 0%, #3127a4 100%);
+    background: linear-gradient(195deg, #bfbfbf 0%, var(--ast-brand-1) 100%);
+
+    color: white;
+    border: none;
+    box-shadow: -5px 5px 8px 0px #00000040;
+    margin-right: 0.6rem;
+    margin-left: 0.6rem;
+    margin-bottom: 2rem;
+    transition: box-shadow 200ms;
+    &:hover {
+      box-shadow: -5px 5px 12px 0px #00000080;
+    }
+    &:nth-of-type(2n) {
+      // background: linear-gradient(180deg, #ffb99a 0%, #ff6f30 100%);
+      background: linear-gradient(195deg, #bfbfbf 0%, var(--ast-brand-2) 100%);
+    }
+    &:nth-of-type(3n) {
+      // background: linear-gradient(181.64deg, #e1bdfe 0%, #a243ff 100%);
+      background: linear-gradient(195deg, #bfbfbf 0%, var(--ast-brand-3) 100%);
+    }
+    .dashboard-card-img {
+      height: 15rem;
+    }
+    .categoryname {
+      display: none;
+    }
+    .coursename {
+      color: white;
+      font-weight: bold;
+    }
+    .progress-text {
+      color: white;
+    }
+    .card-footer.dashboard-card-footer {
+      background: transparent !important;
+      .progress {
+        background: white !important;
+        margin-bottom: 10px;
+        .progress-bar.bar {
+          background: #40b0b6;
+        }
+      }
+    }
+  }
+}
+
+.block .block-cards .btn.btn-link.btn-icon {
+  color: white;
+  &:hover {
+    color: black;
+  }
+}
+
+// Emebd video
+.ast-embed-wrp {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+.ast-embed-wrp.ast-featured {
+  padding: 40px 0;
+}
+
+// Media Queries
+.dashboard-card-deck:not(.fixed-width-cards) {
+  @media (max-width: 576px) {
+    .dashboard-card {
+      margin-left: 0;
+      margin-right: 0;
+      box-shadow: none;
+    }
+  }
+  @media (min-width: 576px) {
+    .dashboard-card {
+      width: calc(48% - #{$card-gutter});
+    }
+  }
+  @media (min-width: 840px) {
+    .dashboard-card {
+      width: calc(31.5% - #{$card-gutter});
+    }
+  }
+}

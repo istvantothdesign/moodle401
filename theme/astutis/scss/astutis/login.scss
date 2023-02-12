@@ -1,0 +1,27 @@
+.loginform {
+  min-width: 450px;
+}
+
+.login-container .login-logo {
+  margin-bottom: 2.5rem;
+}
+#logoimage {
+  max-width: 300px;
+}
+#loginbtn {
+  width: 100%;
+}
+.ast-ghost-btn {
+  width: 100%;
+  background-color: white;
+  border: 1px solid $primary;
+  color: $primary;
+  margin-bottom: 1.5rem;
+}
+
+// Media Queries
+@media only screen and (max-width: 580px) {
+  .loginform {
+    min-width: auto;
+  }
+}
