@@ -1,0 +1,202 @@
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.pagelayout-login #page,
+body {
+  background: white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-weight: 600;
+}
+
+.navbar.fixed-top {
+  height: auto;
+  align-items: center;
+}
+.navbar.fixed-top [data-key=home] {
+  display: none;
+}
+.navbar.fixed-top .navbar-brand .logo {
+  max-width: 156px;
+}
+
+.navbar.fixed-top [data-key=courses] {
+  display: none;
+}
+
+.breadcrumb .breadcrumb-item {
+  max-width: 250px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#theme_boost-drawers-primary .drawercontent.drag-container .list-group a[href$="courses.php"] {
+  display: none;
+}
+#theme_boost-drawers-primary .drawercontent.drag-container .list-group a[href$="?redirect=0"] {
+  display: none;
+}
+
+.ast-round {
+  border-radius: 10px;
+}
+
+.ast-footer.astutis {
+  padding: 20px 15px;
+  max-width: 250px;
+}
+.ast-footer.astutis p,
+.ast-footer.astutis a {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+}
+
+.ast-footer__ctn {
+  margin: 20px 0 40px 0;
+}
+
+.ast-footer__wrp {
+  margin-bottom: 10px;
+}
+
+.ast-footer__heading {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.ast-footer__wrp.social {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.ast-footer__social {
+  width: 24px;
+  text-align: center;
+  transition: filter 200ms ease-in-out;
+}
+.ast-footer__social:hover {
+  filter: brightness(2);
+  cursor: pointer;
+}
+
+.ast-footer__social__icon.facebook {
+  content: url([[pix:theme|site/social-icons/facebook]]);
+}
+
+.ast-footer__social__icon.twitter {
+  content: url([[pix:theme|site/social-icons/twitter]]);
+}
+
+.ast-footer__social__icon.youtube {
+  content: url([[pix:theme|site/social-icons/youtube]]);
+}
+
+.ast-footer__social__icon.linkedin {
+  content: url([[pix:theme|site/social-icons/linkedin]]);
+}
+
+#h5p-iframe-5 body {
+  background: green;
+}
+
+.rospa-logo {
+  content: url(https://istvantothdesign.github.io/astutis/rospa-logo.png);
+}
+
+.amazon-logo {
+  content: url(https://astutis.github.io/moodle/Astutis%20Theme/Images/Client%20logos/amazon%20logo.png);
+}
+
+@media only screen and (min-width: 1700px) {
+  .pagelayout-login #page,
+  body {
+    background-size: cover !important;
+    background-position: center;
+  }
+}
+@media only screen and (max-width: 1700px) {
+  .pagelayout-login #page,
+  body {
+    background-size: contain !important;
+    background-position: center;
+  }
+}
+@media only screen and (max-width: 950px) {
+  .pagelayout-login #page,
+  body {
+    background: white !important;
+  }
+}
+#page-mod-oublog-view #page-content {
+  display: flex;
+  justify-content: center;
+}
+#page-mod-oublog-view #page-content #region-main-box {
+  max-width: 830px;
+}
+#page-mod-oublog-view #page-content #region-main-box #oublog-posts {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+#page-mod-oublog-view #page-content #region-main-box #oublog-posts .oublog-post {
+  padding: 30px;
+  background: transparent;
+  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.0901960784);
+  border-radius: 20px;
+}
+#page-mod-oublog-view #page-content #region-main-box #oublog-posts .oublog-odd {
+  border-left: 25px solid #ffbd00;
+}
+#page-mod-oublog-view #page-content #region-main-box #oublog-posts .oublog-even {
+  border-left: 25px solid #0000ff;
+}
+#page-mod-oublog-view #page-content #region-main-box .oublog-views {
+  display: none;
+}
+
+#page-mod-oublog-editpost #page-content,
+#page-mod-oublog-participation #page-content,
+#page-mod-forum-view #page-content,
+#page-mod-forum-discuss #page-content {
+  display: flex;
+  justify-content: center;
+}
+#page-mod-oublog-editpost #page-content #region-main-box,
+#page-mod-oublog-participation #page-content #region-main-box,
+#page-mod-forum-view #page-content #region-main-box,
+#page-mod-forum-discuss #page-content #region-main-box {
+  max-width: 830px;
+  width: 100%;
+}
+
+.oublog div div div {
+  align-items: center;
+  justify-content: space-between;
+}
+.oublog div div div .activity-info {
+  display: none !important;
+}
+
+.forumpost {
+  padding: 30px !important;
+  background: transparent;
+  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.0901960784);
+  border-radius: 20px;
+}/*# sourceMappingURL=site-wide.css.map */
