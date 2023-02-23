@@ -12,8 +12,8 @@
 defined('MOODLE_INTERNAL') || die();                                                                                                
                                                                                                                                     
 $plugin->component = 'theme_astutis';
-$plugin->release = '0.2.7';
-$plugin->version = 2022082200;
+$plugin->release = '0.2.8';
+$plugin->version = 2023022200;
 $plugin->requires = 2021051700;
 $plugin->maturity = MATURITY_BETA;
                                                                                              
