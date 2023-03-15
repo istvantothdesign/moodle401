@@ -143,6 +143,27 @@ h6,
     background: white !important;
   }
 }
+#page-mod-oublog-editpost #page-content,
+#page-mod-oublog-participation #page-content,
+#page-mod-forum-view #page-content,
+#page-mod-forum-discuss #page-content,
+#page-mod-forum-post #page-content,
+#page-mod-oublog-editcomment #page-content,
+#page-mod-oublog-viewpost #page-content {
+  display: flex;
+  justify-content: center;
+}
+#page-mod-oublog-editpost #page-content #region-main-box,
+#page-mod-oublog-participation #page-content #region-main-box,
+#page-mod-forum-view #page-content #region-main-box,
+#page-mod-forum-discuss #page-content #region-main-box,
+#page-mod-forum-post #page-content #region-main-box,
+#page-mod-oublog-editcomment #page-content #region-main-box,
+#page-mod-oublog-viewpost #page-content #region-main-box {
+  max-width: 830px;
+  width: 100%;
+}
+
 #page-mod-oublog-view #page-content {
   display: flex;
   justify-content: center;
@@ -159,31 +180,16 @@ h6,
   padding: 30px;
   background: transparent;
   box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.0901960784);
-  border-radius: 20px;
+  border-radius: 0.5rem;
 }
 #page-mod-oublog-view #page-content #region-main-box #oublog-posts .oublog-odd {
-  border-left: 25px solid #ffbd00;
+  border-left: 25px solid #a243ff;
 }
 #page-mod-oublog-view #page-content #region-main-box #oublog-posts .oublog-even {
-  border-left: 25px solid #0000ff;
+  border-left: 25px solid #3127a4;
 }
 #page-mod-oublog-view #page-content #region-main-box .oublog-views {
   display: none;
-}
-
-#page-mod-oublog-editpost #page-content,
-#page-mod-oublog-participation #page-content,
-#page-mod-forum-view #page-content,
-#page-mod-forum-discuss #page-content {
-  display: flex;
-  justify-content: center;
-}
-#page-mod-oublog-editpost #page-content #region-main-box,
-#page-mod-oublog-participation #page-content #region-main-box,
-#page-mod-forum-view #page-content #region-main-box,
-#page-mod-forum-discuss #page-content #region-main-box {
-  max-width: 830px;
-  width: 100%;
 }
 
 .oublog div div div {
@@ -194,9 +200,191 @@ h6,
   display: none !important;
 }
 
-.forumpost {
+.oublog-post {
   padding: 30px !important;
   background: transparent;
   box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.0901960784);
-  border-radius: 20px;
+  border-radius: 0.5rem;
+  margin-top: 20px;
+}
+.oublog-post:nth-child(odd) {
+  border-left: 25px solid #a243ff !important;
+}
+.oublog-post:nth-child(even) {
+  border-left: 25px solid #3127a4 !important;
+}
+
+.oublog-comment {
+  padding: 30px !important;
+  background: transparent;
+  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.0901960784);
+  border-radius: 0.5rem !important;
+  margin-top: 30px;
+}
+.oublog-comment:nth-child(odd) {
+  border-left: 25px solid #3127a4 !important;
+}
+.oublog-comment:nth-child(even) {
+  border-left: 25px solid #a243ff !important;
+}
+
+.oublog-post-commented {
+  background: none;
+}
+
+.oublog .afterlink {
+  display: none;
+}
+
+article:nth-of-type(1) .forumpost {
+  padding: 30px !important;
+  background: transparent;
+  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.0901960784);
+  border-radius: 0.5rem;
+  border-left: 25px solid #a243ff !important;
+  margin-top: 30px;
+}
+article:nth-of-type(1) .indent article:nth-child(odd) .forumpost {
+  border-left: 25px solid #3127a4 !important;
+}
+article:nth-of-type(1) .indent article:nth-child(odd) .indent article .forumpost {
+  border-left: 25px solid #3127a4 !important;
+}
+article:nth-of-type(1) .indent article:nth-child(even) .forumpost {
+  border-left: 25px solid #a243ff !important;
+}
+article:nth-of-type(1) .indent article:nth-child(even) .indent article .forumpost {
+  border-left: 25px solid #a243ff !important;
+}
+
+.ast-marketing-shadow {
+  box-shadow: -5px 5px 8px 0 rgba(0, 0, 0, 0.062745098) !important;
+}
+
+.ast-marketing-template-button {
+  padding: 12px 24px;
+  background: #ae76f5;
+  color: white !important;
+  border-radius: 500px;
+  border: none;
+  box-shadow: none;
+  text-decoration: none !important;
+  font-weight: 600;
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.168) inset;
+  transition: background 200ms;
+}
+.ast-marketing-template-button:hover {
+  background: #8a55cf;
+}
+
+.ast-marketing-template-1 {
+  padding: 40px;
+  border-radius: 10px;
+  position: relative;
+  background-color: darkblue;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+.ast-marketing-template-1 .images img:nth-of-type(1) {
+  position: absolute;
+  z-index: 1;
+  bottom: 3%;
+  left: 5%;
+}
+.ast-marketing-template-1 .images img:nth-of-type(2) {
+  position: absolute;
+  z-index: 1;
+  top: 35%;
+  right: 2%;
+}
+.ast-marketing-template-1 .images img:nth-of-type(3) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  max-width: none;
+  margin: 0;
+  padding: 0;
+}
+.ast-marketing-template-1__txt-wrp {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px 0;
+  position: relative;
+  z-index: 2;
+}
+.ast-marketing-template-1__h {
+  font-size: 60px;
+}
+.ast-marketing-template-1__p {
+  max-width: 450px;
+}
+.ast-marketing-template-1__line {
+  width: 2px;
+  height: 100%;
+  background: white;
+}
+.ast-marketing-template-1__logos {
+  display: flex;
+  justify-content: flex-end;
+  height: 35px;
+  gap: 0px 10px;
+  width: 100%;
+  z-index: 2;
+  position: relative;
+}
+.ast-marketing-template-1__logos img:nth-of-type(1) {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+}
+.ast-marketing-template-1__logos img:nth-of-type(2) {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+}
+
+.ast-marketing-template-2 {
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  color: white;
+  position: relative;
+}
+.ast-marketing-template-2__img-wrp {
+  position: relative;
+  height: 400px;
+  overflow: hidden;
+}
+.ast-marketing-template-2 img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  max-width: 100% !important;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  max-width: none;
+  margin: 0;
+  padding: 0;
+}
+.ast-marketing-template-2__link-wrp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  width: 100%;
 }/*# sourceMappingURL=site-wide.css.map */
