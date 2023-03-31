@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      #oublog-posts .userinitials {
+        width: 70px;
+        height: 70px;
+      }
+    </style>
+
+    <script>
+      // Select the element you want to observe
+      const targetNode = document.querySelector("body");
+
+      if (targetNode.id === "page-mod-label-mod") {
+        // Options for the observer (which mutations to observe)
+        const config = { attributes: true, attributeFilter: ["class"] };
+
+        // Callback function to execute when mutations are observed
+        const callback = function (mutationsList, observer) {
+          // Look for the class mutation
+          for (const mutation of mutationsList) {
+            if (
+              mutation.type === "attributes" &&
+              mutation.attributeName === "class"
+            ) {
+              // Handle the class mutation
+              console.log("A new class has been added to the element!");
+
+              if (targetNode.classList.contains("lockscroll")) {
+                targetNode.classList.remove("lockscroll");
+              }
+            }
+          }
+        };
+
+        // Create an observer instance linked to the callback function
+        const observer = new MutationObserver(callback);
+
+        // Start observing the target element for configured mutations
+        observer.observe(targetNode, config);
+      }
+    </script>
+  </body>
+</html>
